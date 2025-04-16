@@ -1,0 +1,16 @@
+<div class="activity-feed">
+  <div *ngFor="let activity of activities" class="activity-item">
+    <div class="activity-avatar" [style.background-color]="'#4e46b4'">
+      {{ activity.avatar }}
+    </div>
+    <div class="activity-content">
+      <div class="activity-header">
+        <span class="activity-agent">{{ activity.agent }}</span>
+        <span class="activity-time">{{ activity.time }}</span>
+      </div>
+      <div class="activity-body">
+        {{ activity.action }} <strong>{{ activity.target }}</strong>
+      </div>
+    </div>
+  </div>
+</div>
