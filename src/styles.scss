@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+:root {
+  --primary-color: #4e46b4;
+  --primary-color-light: rgba(78, 70, 180, 0.1);
+  --secondary-color: #3d8bfd;
+  --success-color: #20c997;
+  --warning-color: #fd7e14;
+  --danger-color: #dc3545;
+  --dark-blue: #1a1f36;
+  --text-color: #1a1f36;
+  --text-color-secondary: #6c757d;
+  --surface-border: #e9ecef;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: #f8f9fa;
+}
+
+.h-full {
+  height: 100%;
+}

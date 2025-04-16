@@ -1,0 +1,20 @@
+<div class="sidebar">
+  <ul class="sidebar-menu">
+    <li *ngFor="let item of menuItems" [class.active]="item.active">
+      <a href="#" class="sidebar-link">
+        <i [class]="item.icon"></i>
+        <span>{{ item.label }}</span>
+      </a>
+    </li>
+  </ul>
+  
+  <div class="sidebar-footer">
+    <div class="user-info">
+      <p-avatar icon="pi pi-user" styleClass="mr-2" shape="circle"></p-avatar>
+      <div class="user-details">
+        <div class="user-name">John Doe</div>
+        <div class="user-role">Administrator</div>
+      </div>
+    </div>
+  </div>
+</div>
