@@ -1,0 +1,78 @@
+.sidebar {
+  width: 250px;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+  
+  li {
+    padding: 0.5rem 1rem;
+    
+    &.active {
+      background-color: rgba(78, 70, 180, 0.1);
+      border-left: 3px solid #4e46b4;
+      
+      .sidebar-link {
+        color: #4e46b4;
+        font-weight: 500;
+        
+        i {
+          color: #4e46b4;
+        }
+      }
+    }
+  }
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #495057;
+  text-decoration: none;
+  
+  &:hover {
+    color: #4e46b4;
+    
+    i {
+      color: #4e46b4;
+    }
+  }
+  
+  i {
+    font-size: 1.25rem;
+    color: #6c757d;
+  }
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-details {
+  margin-left: 0.5rem;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.user-role {
+  font-size: 0.75rem;
+  color: #6c757d;
+}

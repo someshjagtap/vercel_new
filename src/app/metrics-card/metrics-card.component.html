@@ -1,0 +1,12 @@
+<div class="metrics-card">
+  <div class="metrics-icon" [style.background-color]="data.color + '20'" [style.color]="data.color">
+    <i [class]="data.icon"></i>
+  </div>
+  <div class="metrics-content">
+    <div class="metrics-title">{{ data.title }}</div>
+    <div class="metrics-value">{{ data.value }}</div>
+    <div class="metrics-trend" [class.positive]="data.trend.includes('+')">
+      {{ data.trend }}
+    </div>
+  </div>
+</div>
